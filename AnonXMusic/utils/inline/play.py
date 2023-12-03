@@ -61,12 +61,6 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="⏭", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="⏹", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
         [InlineKeyboardButton(text=_["PL_X_5"], switch_inline_query_current_chat="")],
         [InlineKeyboardButton(text=_["PL_X_4"], url=f"https://t.me/Mlze1bot")
         ], 
@@ -81,12 +75,6 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="⏸", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="⏭", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="⏹", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
         ],
         [InlineKeyboardButton(text=_["PL_X_5"], switch_inline_query_current_chat="")],
         [InlineKeyboardButton(text=_["PL_X_4"], url=f"https://t.me/Mlze1bot")
