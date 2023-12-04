@@ -46,7 +46,7 @@ async def song_downloader(client, message: Message):
 
     except Exception as e:
         await m.edit("- لم يتم العثـور على نتائج ؟!\n- حـاول مجـدداً . . .")
-        print(str(e))
+        print(e)
         return
     await m.edit("<b> جـارِ التنزيل ▬▭ . . .</b>")
     try:
